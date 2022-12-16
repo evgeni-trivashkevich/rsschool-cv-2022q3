@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid rgb(46, 44, 44); */
 }
 
 html {
@@ -27,7 +26,6 @@ body {
   position: fixed;
   background: #736efe;
   justify-content: center;
-  /* align-items: center; */
 } 
 
 h1 {
@@ -72,10 +70,6 @@ h2 {
   text-decoration: none;  
   transition: color 0.5s;
 }
-
-/* .section-item a:hover {
-  color: #4d2323;
-} */
 
 .list {
   padding-left: 3%;
@@ -134,7 +128,7 @@ h2 {
 
 .my-github {
   display: flex;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .github-icon {
