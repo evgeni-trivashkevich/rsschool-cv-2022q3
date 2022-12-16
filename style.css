@@ -1,13 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid rgb(46, 44, 44); */
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
 body {
-    background-color: lightblue;
+  max-width: 900px;
+  min-width: 300px;
+  margin: 0 auto;
+  height: 100%;
+  font-family: 'Kaisei Tokumin', serif;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+}
+
+.header {
+  width: 900px;
+  position: fixed;
+  background: #736efe;
+  justify-content: center;
+  /* align-items: center; */
+} 
+
+h1 {
+  padding-bottom: 5%;
+  padding-top: 10%;
+}
+
+h2 {
+  padding-left: 10px;
+  padding: 2%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+.section-contacts {
+  padding-top: 20px;
+}
+
+.section-profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: none;
+}
+
+ .nav-link {
+  color: rgb(248, 248, 248);
+  width: 10px;
+  padding: 0 34px;
+  line-height: 50px;
+  text-decoration: none;
+  transition: .3s;
+  font-weight: bold;
+ }
+
+ .section-item a {
+  color: #829985;
+  text-decoration: none;  
+  transition: color 0.5s;
+}
+
+/* .section-item a:hover {
+  color: #4d2323;
+} */
+
+.list {
+  padding-left: 3%;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+.content {
+  padding-bottom: 90px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  background-color: rgb(250, 250, 250);
+}
+.section {
+  width: 50%;
+  padding: 2%;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
   }
-  
-  h1 {
-    color: white;
-    text-align: center;
-  }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Roboto:wght@100&display=swap');
+
+.container-footer {
+  display: flex;
+  left: 0;
+  bottom: 0;
+  width: 900px;
+  height: 50px;
+  padding: 8px;
+  justify-content: space-between;
+  align-items: center;
+  background: #736efe;
+}
+
+.main-section-projects {
+  text-decoration: none;
+}
+
+.my-github {
+  display: flex;
+  color: black;
+}
+
+.github-icon {
+  padding-right: 10px;
+}
