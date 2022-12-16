@@ -10,8 +10,8 @@ html {
 }
 
 body {
-  max-width: 1024px;
-  min-width: 600px;
+  max-width: 900px;
+  min-width: 300px;
   margin: 0 auto;
   height: 100%;
   font-family: 'Kaisei Tokumin', serif;
@@ -19,18 +19,26 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #e6e2d4;
-}
-
-div {
-  display: flex;
+  background-color: rgb(255, 255, 255);
 }
 
 .header {
-  width: 1024px;
+  width: 900px;
   position: fixed;
-  background-image: linear-gradient(135deg, #5efce8 10%, #736efe 100%);
+  background: #736efe;
+  justify-content: center;
+  /* align-items: center; */
 } 
+
+h1 {
+  padding-bottom: 5%;
+  padding-top: 10%;
+}
+
+h2 {
+  padding-left: 10px;
+  padding: 2%;
+}
 
 .nav-list {
   display: flex;
@@ -38,11 +46,21 @@ div {
   align-items: center;
   list-style: none;
 }
+.section-contacts {
+  padding-top: 20px;
+}
+
+.section-profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: none;
+}
 
  .nav-link {
   color: rgb(248, 248, 248);
   width: 10px;
-  padding: 0 37px;
+  padding: 0 34px;
   line-height: 50px;
   text-decoration: none;
   transition: .3s;
@@ -55,8 +73,12 @@ div {
   transition: color 0.5s;
 }
 
-.section-item a:hover {
+/* .section-item a:hover {
   color: #4d2323;
+} */
+
+.list {
+  padding-left: 3%;
 }
 
 .wrapper {
@@ -70,7 +92,8 @@ div {
 
 .container {
   display: flex;
-  max-width: 1024px;
+  flex-wrap: wrap;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -78,9 +101,11 @@ div {
   display: flex;
   flex-wrap: wrap;
   padding-top: 50px;
+  background-color: rgb(250, 250, 250);
 }
 .section {
   width: 50%;
+  padding: 2%;
 }
 
 @media (max-width: 768px) {
@@ -92,18 +117,26 @@ div {
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Roboto:wght@100&display=swap');
 
 .container-footer {
-  position: absolut;
+  display: flex;
   left: 0;
   bottom: 0;
-  width: 1024px;
+  width: 900px;
   height: 50px;
   padding: 8px;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(135deg, #5efce8 10%, #736efe 100%);
+  background: #736efe;
+}
+
+.main-section-projects {
+  text-decoration: none;
 }
 
 .my-github {
   display: flex;
-  text-decoration: none;
+  color: black;
+}
+
+.github-icon {
+  padding-right: 10px;
 }
